@@ -1,0 +1,5 @@
+.abt { align-items: center; gap: var(--gutter); }
+.abt-img { border-radius: var(--radius-2xl); box-shadow: var(--shadow-m); }
+.abt-points { margin: 16px 0 0; }
+.abt-quote { background: var(--clr-brick); color: #fff; text-align: center; padding: 28px 16px; margin-top: 32px; }
+.abt-quote p { font-family: var(--ff-title); font-size: 32px; letter-spacing: .6px; margin: 0; }

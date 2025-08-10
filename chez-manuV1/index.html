@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chez Manu – Restaurant street food moderne à [Ville]</title>
+  <meta name="description" content="Chez Manu : burgers, paninis et tacos modernes à [Ville]. Ingrédients frais, service rapide, ambiance conviviale. Réservez votre table en ligne." />
+  <meta name="theme-color" content="#C1442E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/advantages.css">
+  <link rel="stylesheet" href="css/menu-preview.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/forms.css">
+  <link rel="icon" href="assets/logo/chez-manu-logo.svg" type="image/svg+xml" />
+  <meta property="og:title" content="Chez Manu – Le goût moderne à deux pas de vous">
+  <meta property="og:description" content="Burgers, paninis et tacos modernes à [Ville]. Frais, rapide, chaleureux.">
+  <meta property="og:image" content="assets/images/hero/hero.svg">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="hdr-header">
+    <div class="container hdr-bar">
+      <a class="hdr-logo" href="index.html" aria-label="Accueil Chez Manu">
+        <img src="assets/logo/chez-manu-logo.svg" width="44" height="44" alt="Logo Chez Manu">
+        <span class="hdr-brand">Chez Manu</span>
+      </a>
+
+      <button class="hdr-toggle" aria-expanded="false" aria-controls="main-nav">
+        <span class="hdr-toggle-bar"></span>
+        <span class="hdr-toggle-bar"></span>
+        <span class="hdr-toggle-bar"></span>
+      </button>
+
+      <nav id="main-nav" class="hdr-nav" aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="carte.html">Carte</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="reservation.html" class="cta-primary">Réserver</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO full-width -->
+  <section class="hero section--full" role="banner" aria-label="Hero visuel">
+    <picture>
+      <img class="hero-bg" src="assets/images/hero/hero.svg" alt="Plan serré d’un burger artisanal juteux et appétissant">
+    </picture>
+    <div class="hero-overlay"></div>
+    <div class="hero-inner container">
+      <h1 class="hero-title">
+        Chez Manu – Restaurant burgers, paninis & tacos modernes à <span class="hero-city">[Ville]</span>
+      </h1>
+      <p class="hero-subtitle">“Chez Manu – Le goût moderne à deux pas de vous”</p>
+      <div class="hero-ctas">
+        <a href="carte.html" class="cta-primary">Découvrir notre carte</a>
+        <a href="reservation.html" class="cta-secondary">Réserver maintenant</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- AVANTAGES -->
+  <section class="adv section section--beige texture-paper" aria-labelledby="adv-title">
+    <div class="container">
+      <h2 id="adv-title" class="section-title">Pourquoi nous choisir&nbsp;?</h2>
+      <ul class="grid-12 adv-cards">
+        <li class="adv-card col-3 col-md-6 col-sm-12">
+          <img class="adv-icn" src="assets/icons/adv-leaf.svg" alt="" aria-hidden="true">
+          <h3>Qualité & fraîcheur</h3>
+          <p>Ingrédients triés sur le volet, sauces maison, pain du jour.</p>
+        </li>
+        <li class="adv-card col-3 col-md-6 col-sm-12">
+          <img class="adv-icn" src="assets/icons/adv-bolt.svg" alt="" aria-hidden="true">
+          <h3>Service rapide</h3>
+          <p>Commandez, installez-vous, on s’occupe du reste en un clin d’œil.</p>
+        </li>
+        <li class="adv-card col-3 col-md-6 col-sm-12">
+          <img class="adv-icn" src="assets/icons/adv-pin.svg" alt="" aria-hidden="true">
+          <h3>Emplacement central</h3>
+          <p>Au cœur de [Ville], facile d’accès pour les étudiants et touristes.</p>
+        </li>
+        <li class="adv-card col-3 col-md-6 col-sm-12">
+          <img class="adv-icn" src="assets/icons/adv-camera.svg" alt="" aria-hidden="true">
+          <h3>Plats instagrammables</h3>
+          <p>Des assiettes qui donnent faim… et de belles photos&nbsp;!</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- APERÇU MENU -->
+  <section class="mnu-preview section section--white texture-paper" aria-labelledby="mnu-title">
+    <div class="container">
+      <h2 id="mnu-title" class="section-title">Notre best-of</h2>
+      <div class="grid-12 mnu-cards">
+        <article class="mnu-card col-4 col-md-6 col-sm-12">
+          <img src="assets/images/menu/burgers.svg" alt="Burger maison garni de fromage fondant et légumes frais" class="mnu-img">
+          <h3 class="mnu-name">Burgers maison</h3>
+          <p class="mnu-desc">Viandes savoureuses, fromages fondants, buns toastés.</p>
+          <a href="carte.html#burgers" class="mnu-link">Voir les burgers</a>
+        </article>
+        <article class="mnu-card col-4 col-md-6 col-sm-12">
+          <img src="assets/images/menu/paninis.svg" alt="Panini croustillant grillé avec fromage coulant" class="mnu-img">
+          <h3 class="mnu-name">Paninis croustillants</h3>
+          <p class="mnu-desc">Grillés minute, parfaits pour un repas sur le pouce.</p>
+          <a href="carte.html#paninis" class="mnu-link">Voir les paninis</a>
+        </article>
+        <article class="mnu-card col-4 col-md-6 col-sm-12">
+          <img src="assets/images/menu/tacos.svg" alt="Tacos généreux garnis selon vos envies" class="mnu-img">
+          <h3 class="mnu-name">Tacos généreux</h3>
+          <p class="mnu-desc">Composez selon vos envies, sauces maison.</p>
+          <a href="carte.html#tacos" class="mnu-link">Voir les tacos</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIE INSTAGRAM -->
+  <section class="section section--full section--ink on-dark texture-noise" aria-labelledby="gal-title">
+    <div class="container">
+      <div class="gal-head">
+        <h2 id="gal-title" class="section-title">Sur Instagram</h2>
+        <a class="gal-cta" href="https://instagram.com/" target="_blank" rel="noopener">Suivre @chezmanu</a>
+      </div>
+      <div class="gal-grid">
+        <a class="gal-item" href="#"><img src="assets/images/instagram/1.svg" alt="Burger signature juteux en gros plan"></a>
+        <a class="gal-item" href="#"><img src="assets/images/instagram/2.svg" alt="Panini grillé croustillant"></a>
+        <a class="gal-item" href="#"><img src="assets/images/instagram/3.svg" alt="Tacos généreux et colorés"></a>
+        <a class="gal-item" href="#"><img src="assets/images/instagram/4.svg" alt="Frites croustillantes maison"></a>
+        <a class="gal-item" href="#"><img src="assets/images/instagram/5.svg" alt="Ambiance conviviale en salle"></a>
+        <a class="gal-item" href="#"><img src="assets/images/instagram/6.svg" alt="Buns briochés dorés"></a>
+        <a class="gal-item" href="#"><img src="assets/images/instagram/7.svg" alt="Assortiment de sauces maison"></a>
+        <a class="gal-item" href="#"><img src="assets/images/instagram/8.svg" alt="Équipe souriante en cuisine"></a>
+        <a class="gal-item" href="#"><img src="assets/images/instagram/9.svg" alt="Burger gourmet"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="ftr">
+    <div class="container ftr-grid grid-12">
+      <div class="col-4 col-sm-12 ftr-brand">
+        <img src="assets/logo/chez-manu-logo.svg" width="44" height="44" alt="" aria-hidden="true">
+        <p class="ftr-text">Chez Manu<br>Street-food moderne à [Ville]</p>
+      </div>
+      <div class="col-4 col-sm-6 ftr-info">
+        <h4>Infos pratiques</h4>
+        <ul>
+          <li><img src="assets/icons/map-pin.svg" alt="" aria-hidden="true"> Adresse : [Votre adresse]</li>
+          <li><img src="assets/icons/phone.svg" alt="" aria-hidden="true"> Téléphone : [Votre numéro]</li>
+          <li><img src="assets/icons/clock.svg" alt="" aria-hidden="true"> Horaires : [Vos horaires]</li>
+        </ul>
+      </div>
+      <div class="col-4 col-sm-6 ftr-links">
+        <h4>Liens</h4>
+        <ul>
+          <li><a href="carte.html">Notre carte</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="reservation.html">Réservation</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ftr-bottom">
+      <p>© <span id="year"></span> Chez Manu. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/menu-toggle.js" defer></script>
+  <script src="js/form-validation.js" defer></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

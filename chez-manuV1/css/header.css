@@ -1,0 +1,19 @@
+.hdr-header { position: sticky; top: 0; background: #fff; z-index: 50; box-shadow: 0 1px 0 #eee; }
+.hdr-bar { display: flex; align-items: center; justify-content: space-between; height: 72px; }
+.hdr-logo { display: inline-flex; align-items: center; gap: 10px; font-weight: 700; color: var(--clr-ink); }
+.hdr-brand { font-family: var(--ff-title); font-size: 28px; letter-spacing: .5px; }
+
+.hdr-toggle { display: none; background: transparent; border: 0; padding: 8px; border-radius: 10px; }
+.hdr-toggle-bar { display: block; width: 26px; height: 2px; background: var(--clr-ink); margin: 6px 0; border-radius: 2px; }
+
+.hdr-nav ul { list-style: none; display: flex; gap: 20px; padding: 0; margin: 0; align-items: center; }
+.hdr-nav a { font-weight: 600; color: var(--clr-ink); }
+.hdr-nav a.active { color: var(--clr-brick); }
+.hdr-nav .cta-primary { padding: 10px 16px; }
+
+@media (max-width: 900px) {
+  .hdr-toggle { display: inline-block; }
+  .hdr-nav { position: fixed; inset: 72px 0 0 0; background: #fff; transform: translateY(-100%); transition: .3s; padding: 24px; }
+  .hdr-nav[aria-expanded="true"] { transform: translateY(0); }
+  .hdr-nav ul { flex-direction: column; align-items: flex-start; gap: 16px; }
+}

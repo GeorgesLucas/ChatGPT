@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>À propos – Chez Manu</title>
+  <meta name="description" content="L’histoire de Chez Manu à [Ville] : street-food moderne, convivialité, produits frais.">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+  <header class="hdr-header">
+    <div class="container hdr-bar">
+      <a class="hdr-logo" href="index.html"><img src="assets/logo/chez-manu-logo.svg" width="44" height="44" alt=""><span class="hdr-brand">Chez Manu</span></a>
+      <button class="hdr-toggle" aria-expanded="false" aria-controls="main-nav"><span class="hdr-toggle-bar"></span><span class="hdr-toggle-bar"></span><span class="hdr-toggle-bar"></span></button>
+      <nav id="main-nav" class="hdr-nav">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="carte.html">Carte</a></li>
+          <li><a href="a-propos.html" class="active">À propos</a></li>
+          <li><a href="reservation.html" class="cta-primary">Réserver</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1 class="page-title">Chez Manu – L’histoire d’un spot gourmand à [Ville]</h1>
+      <div class="abt grid-12">
+        <div class="col-6 col-sm-12">
+          <div class="prose">
+            <p>Né de la passion pour la cuisine rapide de qualité, Chez Manu a ouvert ses portes avec une mission simple : proposer des plats modernes, accessibles et délicieux. Ici, on mélange convivialité et originalité : décor chaleureux, ambiance détendue, accueil souriant. Que vous veniez pour déjeuner entre amis, un dîner rapide en couple ou juste un encas gourmand, nous avons ce qu’il vous faut.</p>
+            <ul class="abt-points">
+              <li>Produits frais sourcés localement</li>
+              <li>Sauces et marinades maison</li>
+              <li>Service rapide, sourire garanti</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-6 col-sm-12">
+          <img class="abt-img" src="assets/images/about/team.svg" alt="L’équipe chaleureuse de Chez Manu derrière le comptoir">
+        </div>
+      </div>
+    </div>
+
+    <aside class="abt-quote">
+      <p>“Le goût moderne à deux pas de vous.”</p>
+    </aside>
+  </main>
+
+  <footer class="ftr">
+    <div class="container ftr-bottom">
+      <p>© <span id="year"></span> Chez Manu.</p>
+    </div>
+  </footer>
+
+  <script src="js/menu-toggle.js" defer></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

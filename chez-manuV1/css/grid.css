@@ -1,0 +1,23 @@
+/* Grille 12 colonnes avec gouttières 24px */
+.grid-12 { display: grid; grid-template-columns: repeat(12, 1fr); gap: var(--gutter); }
+.ggap { gap: var(--gutter); }
+
+.col-12 { grid-column: span 12; }
+.col-6  { grid-column: span 6; }
+.col-4  { grid-column: span 4; }
+.col-3  { grid-column: span 3; }
+
+.order-2 { order: 2; }
+
+@media (max-width: 1024px) {
+  .col-md-12 { grid-column: span 12; }
+  .col-md-6  { grid-column: span 6; }
+  .col-md-4  { grid-column: span 4; }
+  .col-md-3  { grid-column: span 3; }
+}
+
+@media (max-width: 768px) {
+  .grid-12 { gap: 16px; }
+  .col-sm-12 { grid-column: span 12; }
+  .col-sm-6  { grid-column: span 6; }
+}

@@ -1,0 +1,7 @@
+.frm { display: grid; gap: 14px; background: #fff; padding: 20px; border-radius: var(--radius-2xl); box-shadow: var(--shadow-m); }
+.frm-row { display: grid; gap: 6px; }
+label { font-weight: 600; }
+input, textarea { border: 1px solid #ddd; border-radius: 12px; padding: 12px 14px; font: inherit; }
+input:focus, textarea:focus { outline: 2px solid var(--clr-spice); border-color: transparent; }
+.err { color: #b00020; min-height: 1em; }
+.frm-success { margin-top: 8px; background: #e7f6ed; color: #0f7b3e; padding: 10px 12px; border-radius: 12px; }

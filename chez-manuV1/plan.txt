@@ -1,0 +1,53 @@
+# PLAN D’ARCHITECTURE
+## 1. Structure des fichiers
+- index.html : page d’accueil (hero, avantages, aperçu menu, galerie IG)
+- carte.html : présentation détaillée de la carte (3 catégories)
+- a-propos.html : histoire + citation
+- reservation.html : formulaire + infos pratiques + Google Maps (iframe)
+
+- css/variables.css : variables globales (couleurs, typo, tailles)
+- css/grid.css : grille 12 colonnes (gouttières 24px)
+- css/layout.css : thèmes & textures + helpers on-dark
+- css/header.css : header + navigation responsive
+- css/hero.css : section héro full-width
+- css/advantages.css : cartes avantages
+- css/menu-preview.css : aperçu menu (home)
+- css/gallery.css : grille galerie Instagram 3x3 + hover
+- css/menu.css : sections carte (image gauche/texte droite)
+- css/about.css : page à propos (2 colonnes + bandeau citation)
+- css/reservation.css : page réservation + cartes infos + map
+- css/forms.css : styles formulaire et validation
+- css/footer.css : footer
+
+- js/menu-toggle.js : ouverture/fermeture navigation mobile (NAV-TOGGLE-01)
+- js/form-validation.js : validations client formulaire (FORM-RSV-01)
+
+- assets/logo/chez-manu-logo.svg : logo principal (rond + burger stylisé)
+- assets/icons/*.svg : leaf, lightning, map-pin, camera, phone, clock
+- assets/icons/adv-*.svg : icônes avancées section avantages
+- assets/images/... : placeholders SVG (hero, menu, à-propos, instagram)
+
+## 2. Identifiants de repérage dans le code
+- NAV-TOGGLE-01 : bouton menu mobile (header) — header.css / js/menu-toggle.js
+- BTN-CTA-00 : CTA “Réserver” (header)
+- BTN-CTA-01 : CTA “Découvrir notre carte” (hero)
+- BTN-CTA-02 : CTA “Réserver maintenant” (hero)
+- CARD-ADV-01..04 : cartes avantages (index)
+- CARD-MNU-01..03 : cartes aperçu menu (index)
+- GAL-IG-01..09 : items galerie Instagram (index)
+- BAND-QUOTE-01 : bandeau citation (à-propos)
+- BTN-CTA-10..13 : CTAs secondaires (carte / à-propos / réservation)
+- FORM-RSV-01 : formulaire réservation (reservation.html / forms.css / form-validation.js)
+- MAP-EMBED-01 : iframe Google Maps (reservation.html)
+- LOGO-01 : logo SVG (assets/logo/chez-manu-logo.svg)
+- BTN-BASE-PRIMARY / BTN-BASE-SECONDARY : styles de base boutons (variables.css)
+
+## 3. Historique des modifications
+- [2025-08-09] Initialisation complète du projet “Chez Manu” multi-pages + charte graphique + icônes avancées + textures CSS + galerie 3x3 + placeholders locaux.
+
+## 4. TODO
+- [ ] Remplacer [Ville], adresse, téléphone, horaires par les valeurs réelles.
+- [ ] Remplacer les placeholders SVG par des photos WebP (2560×1440, 1400×1050, 800×800).
+- [ ] Connecter véritable flux Instagram (Embed officiel ou API Basic Display).
+- [ ] Ajouter suivi Analytics et balises Open Graph/Twitter complètes.
+- [ ] Paramétrer micro-données schema.org (Restaurant, Menu).

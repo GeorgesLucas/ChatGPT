@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Réserver / Contact – Chez Manu</title>
+  <meta name="description" content="Réservez votre table Chez Manu à [Ville]. Adresse, téléphone, horaires et carte Google Maps.">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/reservation.css">
+  <link rel="stylesheet" href="css/forms.css">
+  <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+  <header class="hdr-header">
+    <div class="container hdr-bar">
+      <a class="hdr-logo" href="index.html"><img src="assets/logo/chez-manu-logo.svg" width="44" height="44" alt=""><span class="hdr-brand">Chez Manu</span></a>
+      <button class="hdr-toggle" aria-expanded="false" aria-controls="main-nav"><span class="hdr-toggle-bar"></span><span class="hdr-toggle-bar"></span><span class="hdr-toggle-bar"></span></button>
+      <nav id="main-nav" class="hdr-nav">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="carte.html">Carte</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="reservation.html" class="active cta-primary">Réserver</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1 class="page-title">Réservez votre table Chez Manu à [Ville]</h1>
+      <p class="prose mxt">Pour un repas rapide ou une soirée gourmande, réservez en ligne et assurez-vous d’avoir votre place. Nous accueillons aussi bien les petits groupes que les grandes tablées.</p>
+
+      <div class="grid-12 rsv-grid">
+        <section class="col-6 col-sm-12">
+          <form id="reservation-form" class="frm" novalidate>
+            <div class="frm-row">
+              <label for="name">Nom</label>
+              <input id="name" name="name" type="text" required placeholder="Votre nom">
+              <small class="err"></small>
+            </div>
+            <div class="frm-row">
+              <label for="phone">Téléphone</label>
+              <input id="phone" name="phone" type="tel" required placeholder="06 12 34 56 78" pattern="^[0-9+() .-]{6,}$">
+              <small class="err"></small>
+            </div>
+            <div class="frm-row grid-12 ggap">
+              <div class="col-6 col-sm-12">
+                <label for="date">Date</label>
+                <input id="date" name="date" type="date" required>
+                <small class="err"></small>
+              </div>
+              <div class="col-6 col-sm-12">
+                <label for="time">Heure</label>
+                <input id="time" name="time" type="time" required>
+                <small class="err"></small>
+              </div>
+            </div>
+            <div class="frm-row">
+              <label for="guests">Nombre de couverts</label>
+              <input id="guests" name="guests" type="number" min="1" max="20" value="2" required>
+              <small class="err"></small>
+            </div>
+            <div class="frm-row">
+              <label for="msg">Message (optionnel)</label>
+              <textarea id="msg" name="msg" rows="4" placeholder="Allergies, préférences..."></textarea>
+            </div>
+            <button class="cta-primary" type="submit">Envoyer la demande</button>
+            <p class="frm-success" role="status" aria-live="polite" hidden>Merci ! Nous confirmons au plus vite.</p>
+          </form>
+        </section>
+
+        <aside class="col-6 col-sm-12">
+          <div class="info-cards">
+            <div class="info-card">
+              <img src="assets/icons/map-pin.svg" alt="" aria-hidden="true">
+              <div><strong>Adresse</strong><br>[Votre adresse, code postal [Ville]]</div>
+            </div>
+            <div class="info-card">
+              <img src="assets/icons/phone.svg" alt="" aria-hidden="true">
+              <div><strong>Téléphone</strong><br>[Votre numéro]</div>
+            </div>
+            <div class="info-card">
+              <img src="assets/icons/clock.svg" alt="" aria-hidden="true">
+              <div><strong>Horaires</strong><br>[Vos horaires]</div>
+            </div>
+          </div>
+
+          <div class="map-wrap">
+            <iframe
+              title="Carte Google Maps - Chez Manu"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=[Votre%20adresse%20%5BVille%5D]&output=embed">
+            </iframe>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="ftr">
+    <div class="container ftr-bottom">
+      <p>© <span id="year"></span> Chez Manu.</p>
+    </div>
+  </footer>
+
+  <script src="js/menu-toggle.js" defer></script>
+  <script src="js/form-validation.js" defer></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

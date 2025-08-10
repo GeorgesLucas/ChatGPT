@@ -1,0 +1,74 @@
+:root {
+  --clr-brick: #C1442E;
+  --clr-spice: #E8772E;
+  --clr-beige: #F5E3C3;
+  --clr-ink: #2B2B2B;
+  --clr-ink-80: rgba(43,43,43,.8);
+  --clr-white: #fff;
+
+  --ff-title: "Bebas Neue", system-ui, sans-serif;
+  --ff-body: "Open Sans", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+
+  --radius-xl: 20px;
+  --radius-2xl: 28px;
+  --shadow-s: 0 6px 18px rgba(0,0,0,.08);
+  --shadow-m: 0 10px 30px rgba(0,0,0,.12);
+
+  --container: 1200px;
+  --gutter: 24px;
+
+  --fs-h1: clamp(2.75rem, 1.8rem + 2.5vw, 3.5rem);
+  --fs-h2: clamp(1.75rem, 1.2rem + 1.4vw, 2.25rem);
+  --fs-body: clamp(1rem, .96rem + .2vw, 1.125rem);
+  --lh: 1.5;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0; color: var(--clr-ink);
+  font-family: var(--ff-body); line-height: var(--lh);
+  background: #fff;
+}
+img { max-width: 100%; display: block; height: auto; }
+a { color: var(--clr-brick); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.prose { max-width: 68ch; }
+.section { padding: 64px 0; }
+.section--full { width: 100vw; }
+.section-title {
+  font-family: var(--ff-title);
+  font-size: var(--fs-h2);
+  letter-spacing: .5px;
+  margin: 0 0 24px;
+}
+.page-title {
+  font-family: var(--ff-title);
+  font-size: var(--fs-h1);
+  margin: 0 0 16px;
+}
+.container {
+  width: min(100% - 32px, var(--container));
+  margin-inline: auto;
+}
+.cta-primary {
+  background: var(--clr-brick);
+  color: var(--clr-white);
+  padding: 12px 20px;
+  border-radius: var(--radius-xl);
+  display: inline-block;
+  font-weight: 600;
+  box-shadow: var(--shadow-s);
+}
+.cta-primary:hover { filter: brightness(1.05); text-decoration: none; }
+.cta-secondary {
+  background: var(--clr-beige);
+  color: var(--clr-ink);
+  padding: 12px 20px;
+  border-radius: var(--radius-xl);
+  display: inline-block;
+  font-weight: 600;
+  box-shadow: var(--shadow-s);
+}
+.mxt { margin-top: 8px; }

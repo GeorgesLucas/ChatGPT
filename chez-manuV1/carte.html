@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Notre carte – Chez Manu</title>
+  <meta name="description" content="Burgers, paninis et tacos faits maison à [Ville]. Découvrez la carte Chez Manu.">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+  <header class="hdr-header">
+    <div class="container hdr-bar">
+      <a class="hdr-logo" href="index.html"><img src="assets/logo/chez-manu-logo.svg" width="44" height="44" alt="Logo Chez Manu"><span class="hdr-brand">Chez Manu</span></a>
+      <button class="hdr-toggle" aria-expanded="false" aria-controls="main-nav"><span class="hdr-toggle-bar"></span><span class="hdr-toggle-bar"></span><span class="hdr-toggle-bar"></span></button>
+      <nav id="main-nav" class="hdr-nav">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="carte.html" class="active">Carte</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="reservation.html" class="cta-primary">Réserver</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1 class="page-title">Notre carte – Burgers, paninis et tacos faits maison à [Ville]</h1>
+      <p class="prose mxt">Chez Manu, chaque bouchée compte. Nos burgers artisanaux sont garnis de viandes savoureuses et de fromages fondants, nos paninis grillés sont parfaits pour un repas sur le pouce, et nos tacos gourmands se déclinent selon vos envies.</p>
+
+      <!-- Burgers -->
+      <section id="burgers" class="mnu-block grid-12">
+        <div class="col-6 col-sm-12">
+          <img class="mnu-block-img" src="assets/images/menu/burgers-detail.svg" alt="Assortiment de burgers maison">
+        </div>
+        <div class="col-6 col-sm-12 mnu-block-txt">
+          <h2>Burgers maison à [Ville]</h2>
+          <ul class="mnu-list">
+            <li><strong>Classic Manu</strong> — steak, cheddar, salade, tomate, sauce maison</li>
+            <li><strong>Smoky BBQ</strong> — bœuf, oignons caramélisés, cheddar fumé, BBQ</li>
+            <li><strong>Veggie Crunch</strong> — galette végétale, pickles, fromage, mayo herbes</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Paninis -->
+      <section id="paninis" class="mnu-block grid-12">
+        <div class="col-6 order-2 col-sm-12">
+          <img class="mnu-block-img" src="assets/images/menu/paninis-detail.svg" alt="Paninis grillés croustillants">
+        </div>
+        <div class="col-6 col-sm-12 mnu-block-txt">
+          <h2>Paninis chauds et croustillants</h2>
+          <ul class="mnu-list">
+            <li><strong>Italiano</strong> — mozzarella, tomate, pesto</li>
+            <li><strong>Chicken Melt</strong> — poulet, emmental, sauce moutarde miel</li>
+            <li><strong>Three Cheese</strong> — emmental, cheddar, mozzarella</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Tacos -->
+      <section id="tacos" class="mnu-block grid-12">
+        <div class="col-6 col-sm-12">
+          <img class="mnu-block-img" src="assets/images/menu/tacos-detail.svg" alt="Tacos généreux garnis de sauces maison">
+        </div>
+        <div class="col-6 col-sm-12 mnu-block-txt">
+          <h2>Tacos savoureux et généreux</h2>
+          <ul class="mnu-list">
+            <li><strong>Chicken Tasty</strong> — poulet mariné, frites, sauce fromagère</li>
+            <li><strong>Beef Lover</strong> — bœuf épicé, cheddar, pico de gallo</li>
+            <li><strong>Falafel Fresh</strong> — falafels, salade croquante, tahini</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="ftr">
+    <div class="container ftr-bottom">
+      <p>© <span id="year"></span> Chez Manu.</p>
+    </div>
+  </footer>
+
+  <script src="js/menu-toggle.js" defer></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

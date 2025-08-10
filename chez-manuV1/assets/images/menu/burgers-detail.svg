@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <defs>
+    <style>
+      .t{font: 700 126px 'Open Sans', Arial, sans-serif; fill:#FFFFFF; dominant-baseline:middle; text-anchor:middle}
+    </style>
+  </defs>
+  <rect width="1200" height="900" rx="36" fill="#E8772E"/>
+  <text x="600.0" y="450.0" class="t">BURGERS</text>
+</svg>

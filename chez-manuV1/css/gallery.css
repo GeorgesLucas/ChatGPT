@@ -1,0 +1,13 @@
+.gal-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; }
+.gal-cta { font-weight: 700; }
+.gal-grid {
+  --ig-size: clamp(110px, 22vw, 260px);
+  display: grid; grid-template-columns: repeat(3, var(--ig-size));
+  gap: 12px; justify-content: center; margin-inline: auto;
+  font-size: 0; line-height: 0;
+}
+.gal-item { border-radius: 16px; overflow: hidden; box-shadow: var(--shadow-s); display: block; }
+.gal-item img { width: var(--ig-size); height: var(--ig-size); aspect-ratio: 1/1; object-fit: cover; display: block;
+  transition: transform .35s ease, filter .35s ease; will-change: transform, filter; transform: scale(1); }
+.gal-item:hover img, .gal-item:focus-visible img { transform: scale(1.04); filter: saturate(1.12) contrast(1.02); }
+.gal-item:focus-visible { outline: 2px solid var(--clr-brick); outline-offset: 4px; border-radius: 16px; }

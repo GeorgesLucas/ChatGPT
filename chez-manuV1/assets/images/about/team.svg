@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1050" viewBox="0 0 1400 1050">
+  <defs>
+    <style>
+      .t{font: 700 147px 'Open Sans', Arial, sans-serif; fill:#FFFFFF; dominant-baseline:middle; text-anchor:middle}
+    </style>
+  </defs>
+  <rect width="1400" height="1050" rx="42" fill="#E8772E"/>
+  <text x="700.0" y="525.0" class="t">TEAM</text>
+</svg>

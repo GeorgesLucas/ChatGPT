@@ -1,0 +1,8 @@
+.hero { position: relative; min-height: 64vh; display: grid; place-items: center; overflow: clip; }
+.hero-bg { width: 100%; height: 100%; object-fit: cover; position: absolute; inset: 0; }
+.hero-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,.4), rgba(0,0,0,.35)); }
+.hero-inner { position: relative; text-align: center; color: #fff; padding: 80px 0; }
+.hero-title { font-family: var(--ff-title); font-size: var(--fs-h1); margin: 0 0 10px; }
+.hero-subtitle { margin: 0 0 20px; font-weight: 600; letter-spacing: .2px; }
+.hero-ctas { display: inline-flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+.hero .cta-secondary { background: rgba(245,227,195,.95); }
